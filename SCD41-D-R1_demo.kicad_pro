@@ -616,6 +616,10 @@
     [
       "516841af-558e-426c-b3b8-09bbc56563fa",
       "STDEsp32"
+    ],
+    [
+      "739f27a1-a9ee-4c19-857a-d482f6648860",
+      "USBSerial"
     ]
   ],
   "text_variables": {}
