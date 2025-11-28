@@ -2390,131 +2390,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -2805,6 +2680,12 @@
 		(color 0 0 0 0)
 		(uuid "c74a8d67-9e4f-48f8-a35d-9351550d5620")
 	)
+	(junction
+		(at 49.53 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cbe1cc4e-3c18-42ce-aafd-79011a9b982f")
+	)
 	(no_connect
 		(at 146.05 60.96)
 		(uuid "32bffd38-e1ed-4a38-9d22-88ad9be72b9a")
@@ -2961,6 +2842,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 74.93) (xy 54.61 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "299b0f73-0754-42fe-9066-7610bec09d6c")
+	)
+	(wire
+		(pts
 			(xy 250.19 49.53) (xy 250.19 52.07)
 		)
 		(stroke
@@ -3061,7 +2952,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 74.93) (xy 54.61 74.93)
+			(xy 45.72 74.93) (xy 49.53 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3696,134 +3587,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 137.16 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f6f2d4e")
-		(property "Reference" "#PWR0118"
-			(at 137.16 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 137.541 140.3858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 137.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc2f0570-6a5e-4b55-b6b2-131542d49b30")
-		)
-		(instances
-			(project "SCD41-D-R1_demo"
-				(path "/7c3a361b-c456-437a-827d-4c6339447bd8"
-					(reference "#PWR0118")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 130.81 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005f6f3087")
-		(property "Reference" "#PWR0119"
-			(at 130.81 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 131.191 140.3858 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "abf58235-d83d-4849-8b3a-dbb1ec227370")
-		)
-		(instances
-			(project "SCD41-D-R1_demo"
-				(path "/7c3a361b-c456-437a-827d-4c6339447bd8"
-					(reference "#PWR0119")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4512,6 +4275,73 @@
 		)
 	)
 	(symbol
+		(lib_name "+3.3V_1")
+		(lib_id "power:+3.3V")
+		(at 137.16 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d87ee7c-219f-4b0d-83be-84840ea9bea5")
+		(property "Reference" "#PWR018"
+			(at 137.16 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 136.906 139.446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e75a5b7-88f9-4313-b979-99e92060d6a4")
+		)
+		(instances
+			(project "SCD41-D-R1_demo"
+				(path "/7c3a361b-c456-437a-827d-4c6339447bd8"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 137.16 147.32 0)
 		(unit 1)
@@ -4641,6 +4471,139 @@
 			(project "SCD41-D-R1_demo"
 				(path "/7c3a361b-c456-437a-827d-4c6339447bd8"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 49.53 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c94047d-0ac4-43ff-b7c8-18429b1ec33c")
+		(property "Reference" "#PWR016"
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 49.53 70.7969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 49.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "531fad6b-c62a-4672-a6c2-4e513c8d9706")
+		)
+		(instances
+			(project "SCD41-D-R1_demo"
+				(path "/7c3a361b-c456-437a-827d-4c6339447bd8"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+3.3V_1")
+		(lib_id "power:+3.3V")
+		(at 130.81 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d11b3e1-e5a6-459b-a3f5-03e90ecd87c2")
+		(property "Reference" "#PWR017"
+			(at 130.81 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 130.556 139.446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f40c61ef-0974-40f1-800f-bab463ab3f22")
+		)
+		(instances
+			(project "SCD41-D-R1_demo"
+				(path "/7c3a361b-c456-437a-827d-4c6339447bd8"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
